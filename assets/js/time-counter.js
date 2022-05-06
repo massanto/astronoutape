@@ -1,6 +1,6 @@
-$(document).ready(function() {
+$(document).ready(function () {
   function makeTimer() {
-    var endTime = new Date("april 01, 2022 00:00:00");
+    var endTime = new Date("october 01, 2022 00:00:00");
     var endTime = (Date.parse(endTime)) / 1000;
     var now = new Date();
     var now = (Date.parse(now) / 1000);
@@ -20,12 +20,12 @@ $(document).ready(function() {
     if (seconds < "10") {
       seconds = "0" + seconds;
     }
-    $(".timer .days").html( days + "<span>D</span>");
-    $(".timer .hours").html( hours + "<span>H</span>");
-    $(".timer .minutes").html(minutes + "<span>M</span>" );
+    $(".timer .days").html(days + "<span>D</span>");
+    $(".timer .hours").html(hours + "<span>H</span>");
+    $(".timer .minutes").html(minutes + "<span>M</span>");
     $(".timer .seconds").html(seconds + "<span>S</span>");
   }
-  setInterval(function() {
+  setInterval(function () {
     makeTimer();
   }, 1000);
 });
